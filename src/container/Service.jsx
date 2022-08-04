@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import '../App.css';
+// import '../App.css';
 import axios from 'axios';
 
 export default function Services() {
@@ -22,8 +22,10 @@ export default function Services() {
 
   return(
     <>
-      {image &&  <div style={{backgroundImage: image[11].strCategoryThumb}}>
-    <h1 className='services'>SERVICES</h1>;
+      {image &&  
+        <div >
+    <h1 className='services' style={{background: 'url('+image[13].strCategoryThumb+')center center/cover no-repeat'
+                      }}>SERVICES</h1>
   </div>}
     </>
     
