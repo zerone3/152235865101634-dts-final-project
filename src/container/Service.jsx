@@ -19,14 +19,13 @@ export default function Services() {
       setLoading(false);
     }
   },[image, loading])
-  const bg = image[11].strCategoryThumb
-  const style = {
-    backgroundImage: bg,
-  }
+
   return(
-    <div style={style}>
-      <h1 className='services'>SERVICES</h1>;
-    </div>
- 
+    <>
+      {image &&  <div style={{backgroundImage: image[11].strCategoryThumb}}>
+    <h1 className='services'>SERVICES</h1>;
+  </div>}
+    </>
+    
   ) 
 }
